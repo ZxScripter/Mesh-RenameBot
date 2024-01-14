@@ -7,7 +7,7 @@ class UserDB(MongoDB):
     shared_users = {}
     def __init__(self,dburl=None):
         if dburl is None:
-            dburl = os.environ.get("DATABASE_URL",none)
+            dburl = os.environ.get("DATABASE_URL",None)
             if dburl is None:
                 dburl = get_var("mongodb+srv://userbot:userbot@cluster0.ltasu.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 
