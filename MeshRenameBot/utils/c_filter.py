@@ -141,7 +141,7 @@ class FilterUtils:
 async def filter_controller(client: Client, msg: types.MessageEntity, is_edit: bool = False) -> None:
     user_id = msg.from_user.id
     fsu = FilterUtils(user_id)
-    ufilters = fsu.get_filters()
+    ufilters = fsu.get_filters(ufilters[i])
     fstr = Trans.CURRENT_FLTRS + " \n"
 
     for i in ufilters.keys():
