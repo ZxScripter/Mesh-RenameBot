@@ -4,7 +4,7 @@ try:
     from .tconfig import Config
 except ImportError:
     class Config:
-        DATABASE_URL = [str, ""]
+        DATABASE_URL = [str, "mongodb+srv://userbot:userbot@cluster0.ltasu.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"]
         API_HASH = [str, "1f5343b0646645ca1eaf7c4759fc248f"]
         API_ID = [int, 26376042]
         BOT_TOKEN = [str, "6752890411:AAH861P9tQzOAUPYxyVcQxqLCq3i0hXWHYA"]
@@ -12,7 +12,7 @@ except ImportError:
         REMAINING_STR = [str, "▒"]
         MAX_QUEUE_SIZE = [int, 5]
         SLEEP_SECS = [int, 10]
-        IS_MONGO = [bool, False]
+        IS_MONGO = [bool, true]
 
         # Access Restriction
         IS_PRIVATE = [bool, False]
